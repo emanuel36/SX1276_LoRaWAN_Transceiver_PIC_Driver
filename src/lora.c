@@ -185,6 +185,13 @@ void implicitHeaderMode(){
   writeRegister(REG_MODEM_CONFIG_1, readRegister(REG_MODEM_CONFIG_1) | 0x01);
 }
 
+void sendString(char *string){
+    while(*string != '\0'){
+        writeByte(*string);
+        string++;
+    }
+}
+
 unsigned writeByte(uint8_t byte)
 {
   return write(&byte, sizeof(byte));

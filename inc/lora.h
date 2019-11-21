@@ -55,8 +55,8 @@
 
 #define MAX_PKT_LENGTH           255
 
-#define RST         LATC1
-#define RST_PIN     TRISC1
+#define RST         LATA4
+#define RST_PIN     TRISA4
 
 #define PA_OUTPUT_RFO_PIN          0
 #define PA_OUTPUT_PA_BOOST_PIN     1
@@ -76,6 +76,7 @@ void explicitHeaderMode();
 void implicitHeaderMode();
 unsigned writeByte(uint8_t byte);
 unsigned write(const uint8_t *buffer, unsigned size);
+void sendString(char *string);
 int endPacket(bool async);
 
 #endif	/* LORA_H */

@@ -7,7 +7,7 @@ void SYSTEM_Initialize(){
     OSCILLATOR_Initialize();
     PIN_MANAGER_Initialize();
     SPI2_Initialize();
-    EUSART_Initialize();
+    //EUSART_Initialize();
     INTERRUPT_GlobalInterruptEnable();
     INTERRUPT_PeripheralInterruptEnable();
 }
@@ -70,9 +70,8 @@ void PIN_MANAGER_Initialize(void)
     INLVLA = 0x3F;
     INLVLC = 0x3F;
     
-	SSP2DATPPS = 0x00;   //RA0->MSSP2:SDI2;    
-    RA1PPS = 0x16;   //RA1->MSSP2:SDO2;    
-    RA2PPS = 0x15;   //RA2->MSSP2:SCK2;    
-    SSP2CLKPPS = 0x02;   //RA2->MSSP2:SCK2;       
-    RC2PPS = 0x0F;   //RC2->EUSART1:TX1;     
+    SSP2DATPPS = 0x03;   //RA3->MSSP2:SDI2;    
+    RC4PPS = 0x15;   //RC4->MSSP2:SCK2;    
+    RC5PPS = 0x16;   //RC5->MSSP2:SDO2;     
+    //RC2PPS = 0x0F;   //RC2->EUSART1:TX1;     
 }
