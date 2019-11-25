@@ -15,7 +15,7 @@ void main(void) {
     while(!begin(915000000)){
         //EUSART_SendString("INIT LORA FAILED\n");
         __delay_ms(1000);
-   }
+    }
     
     while(1){
         while(beginPacket(false) == 0){
