@@ -15,6 +15,9 @@ This is the SX1276 LoRa transceiver driver for PIC16F18426. You can use this dri
 * [MPLAB XC8 v2.10](https://www.microchip.com/development-tools/pic-and-dspic-downloads-archive)
 * [MPLAP X IDE v5.30](https://www.microchip.com/development-tools/pic-and-dspic-downloads-archive)
 
+## Acknowledgements
+I used some functionalities implemented in this project: https://github.com/sandeepmistry/arduino-LoRa
+
 ## Contact
 
 Emanuel Angelim - [Linkedin](https://www.linkedin.com/in/emanuel36/en) - emanuel.tiec@gmail.com
