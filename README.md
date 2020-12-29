@@ -17,7 +17,3 @@ This is the SX1276 LoRa transceiver driver for PIC16F18426. You can use this dri
 
 ## Acknowledgements
 I used some functionalities implemented in this project: https://github.com/sandeepmistry/arduino-LoRa
-
-## Contact
-
-Emanuel Angelim - [Linkedin](https://www.linkedin.com/in/emanuel36/en) - emanuel.tiec@gmail.com
